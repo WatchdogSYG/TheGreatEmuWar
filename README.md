@@ -6,9 +6,9 @@ Experience the "historically accurate" retelling of the heroics displayed by the
 Survive wave-based shooter combat as a soldier defending the town's crops. Gameplay inspired by cod zombies.
 
 ## Links
-View the release notes [here TBC]().
+View the release notes [here](https://github.com/WatchdogSYG/TheGreatEmuWar/blob/main/Documentation/).
 
-View the Technical documentation [here TBC]().
+View the Technical documentation [here TBC](https://github.com/WatchdogSYG/TheGreatEmuWar/blob/main/Documentation/Technical).
 
 View the game store (itchio) page [here](https://watchdev.itch.io/emu).
 
