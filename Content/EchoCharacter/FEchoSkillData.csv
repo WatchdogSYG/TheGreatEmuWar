@@ -1,0 +1,6 @@
+﻿Name,Cost,Description,SkillClass,Prerequisites
+A,100,a,Blueprint'/Game/EchoCharacter/ES_SkillA.ES_SkillA_C',
+B,200,b,Blueprint'/Game/EchoCharacter/ES_SkillB.ES_SkillB_C',
+C,300,c,Blueprint'/Game/EchoCharacter/ES_SkillC.ES_SkillC_C',"(""A"",""B"")"
+D,400,d,Blueprint'/Game/EchoCharacter/ES_SkillD.ES_SkillD_C',"(""C"")"
+E,500,e,Blueprint'/Game/EchoCharacter/ES_SkillE.ES_SkillE_C',"(""D"")"
