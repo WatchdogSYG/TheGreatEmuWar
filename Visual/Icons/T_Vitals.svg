@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1000"
+   height="320"
+   viewBox="0 0 1000 320"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="vitals.svg"
+   inkscape:export-filename="vitals.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:zoom="1.0396785"
+     inkscape:cx="683.86528"
+     inkscape:cy="120.7104"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="80,420"
+       orientation="-1,0"
+       id="guide1"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="500,420"
+       orientation="-1,0"
+       id="guide2"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="920,420"
+       orientation="-1,0"
+       id="guide3"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="-100,160"
+       orientation="0,1"
+       id="guide4"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="-100,240"
+       orientation="0,1"
+       id="guide5"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="-17.003016,80"
+       orientation="0,1"
+       id="guide6"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="990,416.18358"
+       orientation="-1,0"
+       id="guide7"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="-101.47368,310"
+       orientation="0,1"
+       id="guide8"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="-89.450733,10"
+       orientation="0,1"
+       id="guide9"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="10,348.37416"
+       orientation="-1,0"
+       id="guide10"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="350,589.32777"
+       orientation="-1,0"
+       id="guide13"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="360,590.00789"
+       orientation="-1,0"
+       id="guide14"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="393.10973"
+       y="29.925308"
+       width="509.41036"
+       height="98.617493"
+       id="rect13" />
+    <rect
+       x="393.10974"
+       y="29.925308"
+       width="509.41037"
+       height="98.617493"
+       id="rect13-1" />
+    <rect
+       x="393.10974"
+       y="29.925308"
+       width="509.41037"
+       height="98.617493"
+       id="rect13-14" />
+    <rect
+       x="393.10974"
+       y="29.925308"
+       width="509.41037"
+       height="98.617493"
+       id="rect13-1-8" />
+    <rect
+       x="393.10974"
+       y="29.925308"
+       width="509.41037"
+       height="98.617493"
+       id="rect13-1-9" />
+    <rect
+       x="393.10974"
+       y="29.925308"
+       width="509.41037"
+       height="98.617493"
+       id="rect13-1-9-1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g14"
+       inkscape:label="Tag">
+      <path
+         style="fill:#c9dcde;fill-opacity:1;stroke:#a9bec1;stroke-width:20;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         d="m 80,10 h 840 l 70,70 v 160 l -70,70 H 80 L 10,240 V 80 Z"
+         id="path1"
+         sodipodi:nodetypes="ccccccccc" />
+      <circle
+         style="fill:#000000;fill-opacity:1;stroke:#abbfc2;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="path10"
+         cy="160"
+         cx="39.080723"
+         r="11.05358" />
+    </g>
+    <rect
+       style="display:inline;fill:#ff00ff;fill-opacity:1;stroke:#00ff00;stroke-width:0.887366;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect12"
+       width="269.01453"
+       height="265.98792"
+       x="80.985474"
+       y="27.006042"
+       inkscape:label="player_profile" />
+    <g
+       id="g15"
+       inkscape:label="Vitals"
+       style="display:inline">
+      <rect
+         style="fill:#ff00ff;fill-opacity:1;stroke:#00ff00;stroke-width:0.404033;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="rect12-8"
+         width="559.59595"
+         height="26.508907"
+         x="360.20203"
+         y="266.72672" />
+      <rect
+         style="fill:#ff00ff;fill-opacity:1;stroke:#00ff00;stroke-width:0.570492;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         id="rect12-8-1"
+         width="559.4295"
+         height="52.867153"
+         x="360"
+         y="213.56642" />
+      <text
+         xml:space="preserve"
+         id="text12"
+         style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13-1);fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         transform="matrix(4.2987987,0,0,3.974757,-1279.5692,16.368132)"><tspan
+           x="393.10938"
+           y="40.953125"
+           id="tspan3">216 Kills    |    $3509</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text12-9"
+         style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13-1-9);fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         transform="matrix(4.2987987,0,0,3.974757,-929.53936,95.771613)"><tspan
+           x="393.10938"
+           y="40.953125"
+           id="tspan4">60</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text12-9-3"
+         style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13-1-9-1);fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         transform="matrix(2.1493994,0,0,1.9873785,-66.909817,208.87408)"><tspan
+           x="393.10938"
+           y="40.953125"
+           id="tspan5">100 / 100 SP</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text12-6"
+         style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13-1-8);fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         transform="matrix(2.1493762,0,0,1.9873785,-23.590973,168.82058)"><tspan
+           x="393.10938"
+           y="40.953125"
+           id="tspan6"> / 60 HP</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text12-2"
+         style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13-14);display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         transform="matrix(8.5975047,0,0,7.9495139,-3024.6938,-226.01458)"><tspan
+           x="393.10938"
+           y="40.953125"
+           id="tspan7">PlayerName</tspan></text>
+    </g>
+  </g>
+</svg>
