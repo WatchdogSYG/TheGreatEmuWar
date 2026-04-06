@@ -1,20 +1,32 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "EchoGameInstance.h"
 
-TArray<FEchoOnlineFriend> UEchoGameInstance::GetFriendsList() {
-	
-	TArray<FEchoOnlineFriend> CachedFriendsList;
-	for (auto& Friend : FriendsList) {
-		FEchoOnlineFriend F;
-		F.DisplayName = Friend->GetDisplayName();
-		F.UserId = Friend->GetUserId()->ToString();
-		F.Presence = Friend->GetPresence().Status.StatusStr;
-		CachedFriendsList.Add(F);
-	}
-	return CachedFriendsList;
+////////////////////////////////////////////////////////////////
+////  INITIALISATION
+////////////////////////////////////////////////////////////////
+
+
+void UEchoGameInstance::Init() {
+	UE_LOG(LogTemp, Display, TEXT("Initialising UEchoGameInstance"));
+	//IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
+	UE_LOG(LogTemp, Display, TEXT("UEchoGameInstance Initialised"));
 }
+
+////////////////////////////////////////////////////////////////
+////  ONLINE SUBSYSTEM 
+////////////////////////////////////////////////////////////////
+
+bool UEchoGameInstance::IsLoggedIn() { return false; }
+
+FString UEchoGameInstance::GetOnlineSubsystemName(){
+	IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
+	if (OnlineSubsystem) { return OnlineSubsystem->GetSubsystemName().ToString(); }
+	return TEXT("NULL");
+}
+
+////////////////////////////////////////////////////////////////
+////  ONLINE SUBSYSTEM FRIENDS
+////////////////////////////////////////////////////////////////
 
 void UEchoGameInstance::LogFriendsList() {
 	for (auto& Friend : FriendsList)
@@ -26,40 +38,26 @@ void UEchoGameInstance::LogFriendsList() {
 	}
 }
 
-void UEchoGameInstance::Init() {
-	OnlineSubsystem = IOnlineSubsystem::Get();
+////////////////////////////////////////////////////////////////
+////  ONLINE SUBSYSTEM PROFILE
+////////////////////////////////////////////////////////////////
 
+FString UEchoGameInstance::GetMyUniqueNetId() const {
+	IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
 	if (!OnlineSubsystem) {
 		UE_LOG(LogTemp, Warning, TEXT("No OnlineSubsystem found"));
-		return;
+		return TEXT("0");
 	}
-
-	OnlineFriends = OnlineSubsystem->GetFriendsInterface();
-
-	if (!OnlineFriends) {
-		UE_LOG(LogTemp, Warning, TEXT("No OnlineFriends found"));
-		return;
-	}
-
-	OnlineFriends->ReadFriendsList(
-		0,
-		TEXT("default"), //must be default friends list in current OnlineSubsystemSteam implementation (as opposed to blocked or recent
-		FOnReadFriendsListComplete::CreateUObject(this, &UEchoGameInstance::OnReadFriendsListComplete)
-	);
+	//IOnlineIdentityPtr OnlineIdentity = OnlineSubsystem->GetIdentityInterface();
+	//MyUniqueNetId = OnlineIdentity->GetUniquePlayerId(0);
+	//LocalProfile.MyUniqueNetId = MyUniqueNetId->ToString();
+	//LocalProfile.PlayerNickname = OnlineIdentity->GetPlayerNickname(*MyUniqueNetId);
+	
+	return MyUniqueNetId->ToString(); 
 }
 
-void UEchoGameInstance::OnReadFriendsListComplete(
-	int32 LocalUserNum,
-	bool bWasSuccessful,
-	const FString& ListName,
-	const FString& ErrorStr) {
-	
-	if (!bWasSuccessful) {
-		UE_LOG(LogTemp, Warning, TEXT("Failed to read Steam friends: %s"), *ErrorStr);
-		return;
-	}
-
-	OnlineFriends->GetFriendsList(LocalUserNum, ListName, FriendsList);
-	}
-
+FLocalProfile UEchoGameInstance::GetLocalProfile()
+{
+	return LocalProfile;
+}
 
