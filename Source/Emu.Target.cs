@@ -10,6 +10,6 @@ public class EmuTarget : TargetRules
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V6;
 
-		ExtraModuleNames.AddRange( new string[] { "Emu" } );
+		ExtraModuleNames.AddRange( new string[] { "Emu", "Echo" } );
 	}
 }
