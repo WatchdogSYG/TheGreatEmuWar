@@ -58,8 +58,42 @@ void UAsyncGetFriendsList::OnReadFriendsListComplete(
 		FEchoOnlineFriend F;
 		F.DisplayName = Friend->GetDisplayName();
 		F.UserId = Friend->GetUserId()->ToString();
-		F.Presence = Friend->GetPresence().Status.StatusStr;
+
+		if (Friend->GetPresence().bIsOnline) {
+			F.Presence = TEXT("Online");
+		}
+		else {
+			F.Presence = TEXT("Offline");
+		}
+
+		/*
+		CSteamID SteamID((uint64)Friend->GetUserId()->GetBytes());
+		int ImageId = SteamFriends()->GetLargeFriendAvatar(SteamID);
+		uint32 Width, Height;
+		if (SteamUtils()->GetImageSize(ImageId, &Width, &Height))
+		{
+			TArray<uint8> RawRGBA;
+			RawRGBA.SetNum(Width * Height * 4);
+
+			SteamUtils()->GetImageRGBA(ImageId, RawRGBA.GetData(), RawRGBA.Num());
+		}
+		*/
 		ReturnValue.Add(F);
 	}
 	OnSuccess.Broadcast(ReturnValue);
 }
+/*
+UTexture2D* UAsyncGetFriendsList::CreateTextureFromRGBA(const TArray<uint8>& RawRGBA, uint32 Width, uint32 Height)
+{
+	UTexture2D* Texture = UTexture2D::CreateTransient(Width, Height, PF_R8G8B8A8);
+	if (!Texture) return nullptr;
+
+	void* TextureData = Texture->GetPlatformData()->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
+	FMemory::Memcpy(TextureData, RawRGBA.GetData(), RawRGBA.Num());
+	Texture->GetPlatformData()->Mips[0].BulkData.Unlock();
+
+	Texture->UpdateResource();
+
+	return Texture;
+}
+*/

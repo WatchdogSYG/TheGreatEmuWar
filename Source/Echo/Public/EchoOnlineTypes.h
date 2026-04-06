@@ -20,6 +20,9 @@ struct FEchoOnlineFriend {
 
 	UPROPERTY(BlueprintReadOnly)
 	FString Presence;
+
+	UPROPERTY(BlueprintReadOnly)
+	UTexture2D* ProfileImage;
 };
 
 USTRUCT(BlueprintType)

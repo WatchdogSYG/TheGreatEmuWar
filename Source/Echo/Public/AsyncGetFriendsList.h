@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "EchoOnlineTypes.h"
+#include "steam/steam_api.h"
 #include "OnlineSubsystem.h"
 #include "Interfaces/OnlineFriendsInterface.h"
 #include "Interfaces/OnlinePresenceInterface.h"
@@ -43,4 +44,6 @@ private:
         bool bWasSuccessful,
         const FString& ListName,
         const FString& ErrorStr);
+
+   // UTexture2D* CreateTextureFromRGBA(const TArray<uint8>& RawRGBA, uint32 Width, uint32 Height);
    };
