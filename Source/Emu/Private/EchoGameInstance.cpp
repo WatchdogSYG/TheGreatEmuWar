@@ -1,5 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 #include "EchoGameInstance.h"
+#include "OnlineSubsystemTypes.h"
+#include "Interfaces/OnlineIdentityInterface.h"
 
 ////////////////////////////////////////////////////////////////
 ////  INITIALISATION
@@ -28,12 +30,20 @@ FString UEchoGameInstance::GetOnlineSubsystemName(){
 ////  ONLINE SUBSYSTEM FRIENDS
 ////////////////////////////////////////////////////////////////
 
-void UEchoGameInstance::LogFriendsList() {
-	for (auto& Friend : FriendsList)
+TArray<FEchoOnlineFriend> UEchoGameInstance::GetCachedFriendsList() { return CachedFriendsList; }
+
+TArray<FEchoOnlineFriend> UEchoGameInstance::ClearCachedFriendsList()
+{
+	CachedFriendsList.Empty();
+	return CachedFriendsList;
+}
+
+void UEchoGameInstance::LogCachedFriendsList() {
+	for (auto& Friend : CachedFriendsList)
 	{
 		UE_LOG(LogTemp, Log, TEXT("Friend: %s (% s)"),
-			*Friend->GetDisplayName(),
-			*Friend->GetUserId()->ToString()
+			*Friend.DisplayName,
+			*Friend.UserId
 		);
 	}
 }
@@ -42,17 +52,14 @@ void UEchoGameInstance::LogFriendsList() {
 ////  ONLINE SUBSYSTEM PROFILE
 ////////////////////////////////////////////////////////////////
 
-FString UEchoGameInstance::GetMyUniqueNetId() const {
+FString UEchoGameInstance::GetUniqueNetId(int32 LocalUserNum) const {
 	IOnlineSubsystem* OnlineSubsystem = IOnlineSubsystem::Get();
 	if (!OnlineSubsystem) {
 		UE_LOG(LogTemp, Warning, TEXT("No OnlineSubsystem found"));
 		return TEXT("0");
 	}
-	//IOnlineIdentityPtr OnlineIdentity = OnlineSubsystem->GetIdentityInterface();
-	//MyUniqueNetId = OnlineIdentity->GetUniquePlayerId(0);
-	//LocalProfile.MyUniqueNetId = MyUniqueNetId->ToString();
-	//LocalProfile.PlayerNickname = OnlineIdentity->GetPlayerNickname(*MyUniqueNetId);
-	
+	IOnlineIdentityPtr OnlineIdentity = OnlineSubsystem->GetIdentityInterface();
+	FUniqueNetIdPtr MyUniqueNetId = OnlineIdentity->GetUniquePlayerId(LocalUserNum);
 	return MyUniqueNetId->ToString(); 
 }
 

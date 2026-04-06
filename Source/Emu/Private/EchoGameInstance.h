@@ -6,13 +6,11 @@
 #include "EchoOnlineTypes.h"
 #include "Engine/GameInstance.h"
 #include "OnlineSubsystem.h"
+#include "OnlineSubsystemTypes.h"
 #include "Interfaces/OnlineFriendsInterface.h"
 #include "Interfaces/OnlineIdentityInterface.h"
 #include "Interfaces/OnlinePresenceInterface.h"
 #include "EchoGameInstance.generated.h"
-
-
-
 
 /**
  * 
@@ -23,11 +21,8 @@ class EMU_API UEchoGameInstance : public UGameInstance
 	GENERATED_BODY()
 private:
 	
-	TArray<TSharedRef<FOnlineFriend>> FriendsList;
-	FUniqueNetIdPtr MyUniqueNetId;
+	TArray<FEchoOnlineFriend> CachedFriendsList;
 	FLocalProfile LocalProfile;
-	IOnlineFriendsPtr OnlineFriends;
-	IOnlineIdentityPtr OnlineIdentity;
 
 	void OnReadFriendsListComplete(int32 LocalUserNum,
 		bool bWasSuccessful,
@@ -52,19 +47,21 @@ public:
 	////  ONLINE SUBSYSTEM FRIENDS
 	////////////////////////////////////////////////////////////////
 	
-	//IOnlineFriendsPtr AsyncReadFriendsList();
-
-	//UFUNCTION(BlueprintCallable)
-	//TArray<FEchoOnlineFriend> GetCachedFriendsList();
+	UFUNCTION(BlueprintCallable)
+	TArray<FEchoOnlineFriend> GetCachedFriendsList();
 
 	UFUNCTION(BlueprintCallable)
-	void LogFriendsList();
+	TArray<FEchoOnlineFriend> ClearCachedFriendsList();
+
+	UFUNCTION(BlueprintCallable)
+	void LogCachedFriendsList();
 
 	////////////////////////////////////////////////////////////////
 	////  ONLINE SUBSYSTEM PROFILE
 	////////////////////////////////////////////////////////////////
+	
 	UFUNCTION(BlueprintCallable)
-	FString GetMyUniqueNetId() const;
+	FString GetUniqueNetId(int32 LocalUserNum) const;
 
 	UFUNCTION(BlueprintCallable)
 	FLocalProfile GetLocalProfile();
