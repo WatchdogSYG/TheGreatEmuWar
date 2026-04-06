@@ -2,8 +2,6 @@
 
 
 #include "AsyncGetFriendsList.h"
-#include "OnlineSubsystem.h"
-#include "Interfaces/OnlineFriendsInterface.h"
 
 UAsyncGetFriendsList* UAsyncGetFriendsList::ReadFriendsList(UObject* WorldContextObject)
 {

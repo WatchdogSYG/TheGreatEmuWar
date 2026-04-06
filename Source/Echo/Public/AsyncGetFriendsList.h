@@ -3,8 +3,11 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EchoOnlineTypes.h"
+#include "OnlineSubsystem.h"
+#include "Interfaces/OnlineFriendsInterface.h"
+#include "Interfaces/OnlinePresenceInterface.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "EchoGameInstance.h"
 #include "AsyncGetFriendsList.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnFriendsRead, const TArray<FEchoOnlineFriend>&, OutFriendsList);
@@ -40,5 +43,6 @@ private:
         bool bWasSuccessful,
         const FString& ListName,
         const FString& ErrorStr);
+
 
 };

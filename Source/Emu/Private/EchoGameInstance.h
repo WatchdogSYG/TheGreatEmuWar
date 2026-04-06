@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EchoOnlineTypes.h"
 #include "Engine/GameInstance.h"
 #include "OnlineSubsystem.h"
 #include "Interfaces/OnlineFriendsInterface.h"
@@ -11,36 +12,7 @@
 #include "EchoGameInstance.generated.h"
 
 
-/*
-*	UHT cannot pass TypeDefs (in .h), so we must extract data from OnlineSubsystem types to something like a string.
-*/
-USTRUCT(BlueprintType)
-struct FEchoOnlineFriend {
-	GENERATED_BODY()
 
-	UPROPERTY(BlueprintReadOnly)
-	FString DisplayName;
-
-	UPROPERTY(BlueprintReadOnly)
-	FString UserId;
-
-	UPROPERTY(BlueprintReadOnly)
-	FString Presence;
-};
-
-USTRUCT(BlueprintType)
-struct FLocalProfile {
-
-	GENERATED_BODY()
-
-	UPROPERTY(BlueprintReadOnly)
-	FString MyUniqueNetId;
-
-	UPROPERTY(BlueprintReadOnly)
-	FString PlayerNickname;
-
-	//FTexture2D* ProfilePicture;
-};
 
 /**
  * 
