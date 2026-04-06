@@ -43,6 +43,4 @@ private:
         bool bWasSuccessful,
         const FString& ListName,
         const FString& ErrorStr);
-
-
-};
+   };
