@@ -81,7 +81,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "OnlineSubsystemIdentity")
 	FLocalProfile GetLocalProfile();
 
-		UFUNCTION(BlueprintImplementableEvent, Category = "OnlineSubsystemIdentity")
+	UFUNCTION(BlueprintImplementableEvent, Category = "OnlineSubsystemIdentity")
 	void OnLoginComplete();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "OnlineSubsystemIdentity")
