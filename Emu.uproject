@@ -33,6 +33,10 @@
 		{
 			"Name": "EchoGameSystems",
 			"Enabled": true
+		},
+		{
+			"Name": "MediaFrameworkUtilities",
+			"Enabled": true
 		}
 	]
 }
