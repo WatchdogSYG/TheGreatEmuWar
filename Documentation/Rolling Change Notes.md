@@ -1,0 +1,5 @@
+- Removed the following starter content as it is no longer required.
+	- BP_FirstPersonProjectile
+	- BP_Pickup_Rifle
+	- BP_Weapon_Component
+- EndMenu now shows final score.
