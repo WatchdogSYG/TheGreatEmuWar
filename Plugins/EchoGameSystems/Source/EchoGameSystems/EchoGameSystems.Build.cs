@@ -25,7 +25,17 @@ public class EchoGameSystems : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core", "CoreUObject", "Engine", "Slate", "SlateCore","InputCore", "OnlineSubsystem", "OnlineSubsystemUtils", "Steamworks", "OnlineSubsystemSteam"
+				"Core",
+				"CoreUObject",
+				"Engine",
+				"Slate",
+				"SlateCore",
+				"InputCore",
+				"OnlineSubsystem",
+				"OnlineSubsystemUtils",
+				"Steamworks",
+				"OnlineSubsystemSteam",
+				"UMG"
 			}
 			);
 			
